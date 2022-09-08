@@ -7,9 +7,9 @@ This application calculates information about a given IPv4 address and subnet ma
 3. Run `python subnetCalc.py [IPv4 Address] [Subent Mask] `
 
 # Example 
-### Input 
-`python subnetCalc.py 192.150.4.55 /16`
-### Output:
+Sample Input : `python subnetCalc.py 192.150.4.55 /16`  
+
+Output :  
 ```console
 Address:  192.150.4.55              11000000.10010110.00000100.00110111
 Netmask:  255.255.0.0 = 16          11111111.11111111.00000000.00000000

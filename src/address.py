@@ -12,10 +12,16 @@ File: address.py
 
 """
 
-from helpers import convertToBinary, convertToDecimal
+from helpers import convertToBinary, convertToDecimal, 
 
 
 class Address:
+    """The address class keeps track of a four element list of decimal numbers and provides methods for 
+    returning or setting the binary representation. If the binary representaton is set, numberList is updated to 
+    reflect the correct representation.
+
+    
+    """   
     numberList = []
 
     def __init__(self, numberList):

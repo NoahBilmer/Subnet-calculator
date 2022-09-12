@@ -20,7 +20,6 @@ class Address:
     returning or setting the binary representation. If the binary representaton is set, numberList is updated to 
     reflect the correct representation.
 
-    
     """   
     numberList = []
 

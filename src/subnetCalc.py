@@ -141,6 +141,12 @@ def calculateNetwork(network,subnetMaskIp):
     network.setAddressList(list)
 
 def calculateBroadcast(broadcast,subnetMaskBitCount):
+    """Calculates broadcast address
+
+    Args:
+        broadcast (Address): The given ip, this is the object that gets mutated.
+        subnetMaskBitCount (): The given subnetmask, this will remain unchanged.
+    """    
     broadcastBinary = broadcast.getAddressListBinary()
     broadcastList = []
     binaryNum = ""

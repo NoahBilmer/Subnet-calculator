@@ -116,3 +116,23 @@ def logicalAndTwoBinaryStrings(str1,str2):
             str += "0" 
     return str
 
+def listCpy(list):
+    listCpy = []
+    for i in range(len(list)):
+        listCpy.append(list[i])
+    return listCpy
+
+def createAddressString(ipList, binary = False):
+        ipStr = ""
+        for i in range(0,len(ipList)):
+            if i + 1 != len(ipList):
+                # Awkward formatting logic for binary addresses
+                if binary == True and i == 1:
+                    ipStr += str(ipList[i])
+                elif binary == True and i == 2:
+                    ipStr += "." + ipList[i][0] + " " + str(ipList[i][1:]) + "."
+                else:
+                    ipStr += str(ipList[i]) + "."
+            else:
+                ipStr += str(ipList[i]) 
+        return ipStr

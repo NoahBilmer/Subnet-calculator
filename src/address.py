@@ -12,7 +12,7 @@ File: address.py
 
 """
 
-from helpers import convertToBinary, convertToDecimal, 
+from helpers import convertToBinary, convertToDecimal
 
 
 class Address:

@@ -12,7 +12,7 @@ File: subnetCalc.py
 
 """
 
-from helpers import validateIpInput, validateSubnetInput, convertToBinary, convertSubenetToList, concatList, logicalAndTwoBinaryStrings,convertToDecimal,listCpy,createAddressString
+from helpers import validateIpInput, validateSubnetInput, convertToBinary, convertSubenetToList, concatList, logicalAndTwoBinaryStrings, convertToDecimal, listCpy, createAddressString
 
 import sys
 from address import Address
@@ -108,6 +108,12 @@ def printOutput(text, address, postDecimalText="",postBinaryText=""):
     
 
 def calculateWildCard(wildCard,subnetMaskBitCount):
+    """Calculates wildcard address
+
+    Args:
+        wildCard (Address): the wildCard address 
+        subnetMaskBitCount (Address): subnet mask 
+    """    
     binaryNum = ""
     subnetBitCount = int(subnetMaskBitCount)
     wildCardBinaryList = []
